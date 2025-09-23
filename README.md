@@ -17,7 +17,7 @@ The pipeline performs the following steps:
    - Average sales per fruit.
    - Flags fruits with high average sales (threshold = 3.5).  
 4. **Output**: Sends processed results as JSON to a Kafka topic (`test-topic`).  
-5. **Visualization**: The output can be consumed by Power BI or other BI tools.
+5. **Visualization**: The output can be consumed by Power BI.
 
 ---
 
