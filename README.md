@@ -1,10 +1,10 @@
-(Databricks + Kafka + PySpark) Real-Time Fruit Analytics 
-
-Ingestion → Transformation → Aggregation → Flagging → Final structured output.
-
 # Spark Streaming RDD Project: Real-Time Fruit Sales Analysis
 
 This project demonstrates a real-time data processing pipeline using **PySpark RDD-based Streaming**. It reads streaming fruit sales data from a source (CSV/JSON), processes it in **Databricks**, calculates metrics, and sends the results to **Kafka**.  
+
+(Databricks + Kafka + PySpark) Real-Time Fruit Analytics 
+
+Ingestion → Transformation → Aggregation → Flagging → Final structured output.
 
 ---
 
