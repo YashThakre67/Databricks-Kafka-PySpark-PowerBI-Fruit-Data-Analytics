@@ -1,4 +1,4 @@
-# Spark Streaming RDD Project: Real-Time Fruit Sales Analysis
+# Real-Time Fruit Sales Analysis (Using Spark Streaming RDD)
 
 Ingestion → Transformation → Aggregation → Flagging → Final structured output -> Kafka -> Power-BI(Visualization)
 
