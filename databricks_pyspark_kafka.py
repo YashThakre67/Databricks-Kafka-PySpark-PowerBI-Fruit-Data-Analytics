@@ -101,7 +101,11 @@ def tumbling_global(rdd, batch_size=5):    # For every "5 seconds", we might get
     """
     Collects records globally and groups into batches of N.
     """
-    records = rdd.map(parse_record).filter(lambda x: x is not None).zipWithIndex().map(lambda x: (x[1] // batch_size, x[0])).groupByKey().map(lambda x: list(x[1]))
+    records = rdd.map(parse_record)
+    .filter(lambda x: x is not None)
+    .zipWithIndex()
+    .map(lambda x: (x[1] // batch_size, x[0]))
+    .groupByKey().map(lambda x: list(x[1]))
     
     # filter 
     # O/P: [ ("t1", "apple", 4.0), ("t2", "orange", 5.0), ("t3", "banana", 2.5), ("t4", "apple", 3.0), ("t5", "kiwi", 7.0), ("t6", "apple", 2.0) ]
